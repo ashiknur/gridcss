@@ -1,0 +1,58 @@
+.container{
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 3fr 2fr 1fr;
+    grid-template-areas: 
+    "header header header header header header header header header header"
+    "advertise advertise main main main main sidebar sidebar advertise2 advertise2"
+    "advertise advertise twin twin twin twin2 twin2 twin2 advertise2 advertise2"
+    "footer footer footer footer footer footer footer footer footer footer";
+    display: grid;
+    height: 50vh;
+}
+
+.advertise, .advertise2, main, .sidebar, .twin, .twin2{
+    border: 1px solid white;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+header{
+    grid-area: header;
+    background-color: #52A7F7;
+    display: flex;
+    align-items: center;
+}
+.advertise{
+    grid-area: advertise;
+    background-color: #FEC83E;
+}
+main{
+    grid-area: main;
+    background-color: #6EBF3E;
+}
+.sidebar{
+    grid-area: sidebar;
+    background-color: #B271E0;
+}
+.advertise2{
+    grid-area: advertise2;
+    background-color: #FEC83E;
+}
+.twin{
+    grid-area: twin;
+    background-color: #F4913A;
+}
+.twin2{
+    grid-area: twin2;
+    background-color: #F4913A;
+}
+footer{
+    grid-area: footer;
+    background-color: #0067BF;
+
+    display: flex;
+    align-items: center;
+}
